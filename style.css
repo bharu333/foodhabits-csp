@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f7f0;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1 {
+    background-color: #2e7d32;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+body > p {
+    background-color: #2e7d32;
+    color: white;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+nav {
+    background-color: #1b5e20;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: yellow;
+}
+
+section {
+    background-color: white;
+    margin: 25px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #2e7d32;
+    margin-bottom: 15px;
+}
+
+section img {
+    width: 100%;
+    max-width: 500px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+    margin: 15px auto;
+}
+
+.card {
+    background-color: #e8f5e9;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: #1b5e20;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 600px) {
+    nav a {
+        display: block;
+        margin: 10px;
+    }
+
+    section {
+        margin: 10px;
+        padding: 15px;
+    }
+}
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    transition: transform 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-3px);
+}
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+}
+
+nav a {
+    transition: color 0.3s ease;
+}
+#home {
+    background: linear-gradient(135deg, #dcedc8, #a5d6a7);
+    text-align: center;
+    padding: 40px 25px;
+    border-radius: 15px;
+}
+
+#home h2 {
+    font-size: 30px;
+    color: #1b5e20;
+}
+
+#home h3 {
+    color: #388e3c;
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+#home p {
+    font-size: 17px;
+    margin: 12px 0;
+}
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    background-color: #2e7d32;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: #388e3c;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: #1b5e20;
+}
+nav {
+    display: block !important;
+    visibility: visible !important;
+}
